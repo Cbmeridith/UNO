@@ -27,26 +27,77 @@ public class GameGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         uBtnBack = new javax.swing.JButton();
+        uBtnCard0 = new javax.swing.JButton();
+        uBtnCard1 = new javax.swing.JButton();
+        uBtnCard2 = new javax.swing.JButton();
+        uBtnCard3 = new javax.swing.JButton();
+        uBtnCard4 = new javax.swing.JButton();
+        uBtnCard5 = new javax.swing.JButton();
+        uBtnCard6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         uBtnBack.setText("Back");
+
+        uBtnCard0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blue_4.png"))); // NOI18N
+
+        uBtnCard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/red_7.png"))); // NOI18N
+
+        uBtnCard2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back.png"))); // NOI18N
+
+        uBtnCard3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/red_skip.png"))); // NOI18N
+
+        uBtnCard4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blue_8.png"))); // NOI18N
+
+        uBtnCard5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/yellow_9.png"))); // NOI18N
+
+        uBtnCard6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/green_8.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(uBtnBack)
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(uBtnBack))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(uBtnCard0, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uBtnCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uBtnCard3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uBtnCard4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(uBtnCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(65, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(uBtnCard6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(uBtnCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(173, 173, 173))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(uBtnBack)
-                .addContainerGap(265, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(uBtnCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uBtnCard6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(108, 108, 108)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(uBtnCard0, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uBtnCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uBtnCard3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uBtnCard4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uBtnCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
@@ -89,5 +140,12 @@ public class GameGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton uBtnBack;
+    private javax.swing.JButton uBtnCard0;
+    private javax.swing.JButton uBtnCard1;
+    private javax.swing.JButton uBtnCard2;
+    private javax.swing.JButton uBtnCard3;
+    private javax.swing.JButton uBtnCard4;
+    private javax.swing.JButton uBtnCard5;
+    private javax.swing.JButton uBtnCard6;
     // End of variables declaration//GEN-END:variables
 }
