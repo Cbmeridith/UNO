@@ -1,3 +1,4 @@
+import java.util.concurrent.ThreadLocalRandom;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,11 +11,48 @@
  */
 public class GameGUI extends javax.swing.JFrame {
 
+    public String PlayerName;
+    private int Difficulty;
+    private int PlayerCount;
     /**
      * Creates new form GameGUI
      */
     public GameGUI() {
+        PlayerName = "Player";
+        PlayerCount = 4;
+        Difficulty = 1;
         initComponents();
+        setupGame();
+    }
+    
+    public GameGUI(String playerName, int playerCount, int difficulty) {
+        PlayerName = playerName;
+        PlayerCount = playerCount;
+        Difficulty = difficulty;
+        initComponents();
+        setupGame();
+    }
+    
+    private void setupGame() {
+        //Top Names pulled from BabyCenter.com
+        String[] names = {"Emma", "Olivia", "Isabella", "Ava", "Mia",
+                          "Sophia", "Charlotte", "Ameila", "Harper", "Aria",
+                          "Liam", "Noah", "Mason", "Lucas", "Ethan", "Oliver",
+                          "Elijah", "Aiden", "James", "Benjamin"};
+        
+        uLblAI1.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
+        uLblAI2.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
+        uLblAI3.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
+        
+        //Display Players based on PlayerCount
+        switch(PlayerCount) {
+            case 2: uPnlLeft.setVisible(false);
+                    uPnlRight.setVisible(false);
+                    break;
+            case 3: uPnlRight.setVisible(false);
+                    break;
+            default: break;
+        }
     }
 
     /**
@@ -61,7 +99,7 @@ public class GameGUI extends javax.swing.JFrame {
         uLblCardLeft8 = new javax.swing.JLabel();
         uLblCardLeft9 = new javax.swing.JLabel();
         uLblCardLeft10 = new javax.swing.JLabel();
-        uLblAI4 = new javax.swing.JLabel();
+        uLblAI1 = new javax.swing.JLabel();
         uPnlBottom = new javax.swing.JPanel();
         uBtnCard1 = new javax.swing.JButton();
         uBtnCard2 = new javax.swing.JButton();
@@ -76,6 +114,7 @@ public class GameGUI extends javax.swing.JFrame {
         uPnlMiddle = new javax.swing.JPanel();
         uBtnDeck = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         uMenuBar = new javax.swing.JMenuBar();
         uMenuGame = new javax.swing.JMenu();
         uMenuItemInstructions = new javax.swing.JMenuItem();
@@ -89,8 +128,8 @@ public class GameGUI extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(590, 625));
         getContentPane().setLayout(null);
 
-        uPnlRight.setBackground(new java.awt.Color(255, 100, 100));
         uPnlRight.setMaximumSize(new java.awt.Dimension(120, 350));
+        uPnlRight.setOpaque(false);
         uPnlRight.setPreferredSize(new java.awt.Dimension(120, 350));
         uPnlRight.setLayout(null);
 
@@ -100,11 +139,11 @@ public class GameGUI extends javax.swing.JFrame {
 
         uLblCardRight2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight2);
-        uLblCardRight2.setBounds(0, 250, 90, 70);
+        uLblCardRight2.setBounds(0, 250, 91, 70);
 
         uLblCardRight3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight3);
-        uLblCardRight3.setBounds(0, 220, 90, 70);
+        uLblCardRight3.setBounds(0, 220, 91, 70);
 
         uLblCardRight4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight4);
@@ -116,25 +155,26 @@ public class GameGUI extends javax.swing.JFrame {
 
         uLblCardRight6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight6);
-        uLblCardRight6.setBounds(0, 130, 90, 80);
+        uLblCardRight6.setBounds(0, 130, 91, 80);
 
         uLblCardRight7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight7);
-        uLblCardRight7.setBounds(0, 100, 90, 80);
+        uLblCardRight7.setBounds(0, 100, 91, 80);
 
         uLblCardRight8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight8);
-        uLblCardRight8.setBounds(0, 70, 90, 80);
+        uLblCardRight8.setBounds(0, 70, 91, 80);
 
         uLblCardRight9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight9);
-        uLblCardRight9.setBounds(0, 40, 90, 80);
+        uLblCardRight9.setBounds(0, 40, 91, 80);
 
         uLblCardRight10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         uLblCardRight10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
         uPnlRight.add(uLblCardRight10);
-        uLblCardRight10.setBounds(0, 10, 90, 80);
+        uLblCardRight10.setBounds(0, 10, 91, 80);
 
+        uLblAI3.setForeground(new java.awt.Color(255, 255, 255));
         uLblAI3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         uLblAI3.setText("AIPlayer3");
         uPnlRight.add(uLblAI3);
@@ -143,9 +183,9 @@ public class GameGUI extends javax.swing.JFrame {
         getContentPane().add(uPnlRight);
         uPnlRight.setBounds(470, 110, 120, 350);
 
-        uPnlTop.setBackground(new java.awt.Color(100, 255, 100));
         uPnlTop.setMaximumSize(new java.awt.Dimension(350, 120));
         uPnlTop.setMinimumSize(new java.awt.Dimension(350, 120));
+        uPnlTop.setOpaque(false);
         uPnlTop.setPreferredSize(new java.awt.Dimension(350, 120));
         uPnlTop.setLayout(null);
 
@@ -189,6 +229,7 @@ public class GameGUI extends javax.swing.JFrame {
         uPnlTop.add(uLblCardTop10);
         uLblCardTop10.setBounds(10, 15, 65, 90);
 
+        uLblAI2.setForeground(new java.awt.Color(255, 255, 255));
         uLblAI2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         uLblAI2.setText("AIPlayer2");
         uPnlTop.add(uLblAI2);
@@ -197,9 +238,9 @@ public class GameGUI extends javax.swing.JFrame {
         getContentPane().add(uPnlTop);
         uPnlTop.setBounds(120, 0, 350, 110);
 
-        uPnlLeft.setBackground(new java.awt.Color(100, 100, 255));
         uPnlLeft.setMaximumSize(new java.awt.Dimension(120, 350));
         uPnlLeft.setMinimumSize(new java.awt.Dimension(120, 350));
+        uPnlLeft.setOpaque(false);
         uPnlLeft.setLayout(null);
 
         uLblCardLeft1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
@@ -242,17 +283,18 @@ public class GameGUI extends javax.swing.JFrame {
         uPnlLeft.add(uLblCardLeft10);
         uLblCardLeft10.setBounds(30, 285, 91, 65);
 
-        uLblAI4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        uLblAI4.setText("AIPlayer1");
-        uPnlLeft.add(uLblAI4);
-        uLblAI4.setBounds(0, 0, 110, 16);
+        uLblAI1.setForeground(new java.awt.Color(255, 255, 255));
+        uLblAI1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblAI1.setText("AIPlayer1");
+        uPnlLeft.add(uLblAI1);
+        uLblAI1.setBounds(0, 0, 115, 16);
 
         getContentPane().add(uPnlLeft);
         uPnlLeft.setBounds(0, 110, 120, 350);
 
-        uPnlBottom.setBackground(new java.awt.Color(255, 255, 100));
         uPnlBottom.setMaximumSize(new java.awt.Dimension(550, 120));
         uPnlBottom.setMinimumSize(new java.awt.Dimension(550, 120));
+        uPnlBottom.setOpaque(false);
         uPnlBottom.setPreferredSize(new java.awt.Dimension(550, 120));
         uPnlBottom.setLayout(null);
 
@@ -284,6 +326,7 @@ public class GameGUI extends javax.swing.JFrame {
         uPnlBottom.add(uBtnCard7);
         uBtnCard7.setBounds(450, 20, 70, 100);
 
+        uLblPlayerName.setForeground(new java.awt.Color(255, 255, 255));
         uLblPlayerName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         uLblPlayerName.setText("Player");
         uPnlBottom.add(uLblPlayerName);
@@ -292,7 +335,7 @@ public class GameGUI extends javax.swing.JFrame {
         uBtnNextCards.setBackground(new java.awt.Color(255, 255, 255));
         uBtnNextCards.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/triangle_right.png"))); // NOI18N
         uPnlBottom.add(uBtnNextCards);
-        uBtnNextCards.setBounds(530, 40, 50, 50);
+        uBtnNextCards.setBounds(525, 40, 50, 50);
 
         uBtnPrevCards.setBackground(new java.awt.Color(255, 255, 255));
         uBtnPrevCards.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/triangle_left.png"))); // NOI18N
@@ -302,7 +345,7 @@ public class GameGUI extends javax.swing.JFrame {
         getContentPane().add(uPnlBottom);
         uPnlBottom.setBounds(0, 460, 590, 120);
 
-        uPnlMiddle.setBackground(new java.awt.Color(100, 255, 255));
+        uPnlMiddle.setOpaque(false);
         uPnlMiddle.setLayout(null);
 
         uBtnDeck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back.png"))); // NOI18N
@@ -315,6 +358,10 @@ public class GameGUI extends javax.swing.JFrame {
 
         getContentPane().add(uPnlMiddle);
         uPnlMiddle.setBounds(120, 110, 350, 350);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 590, 580);
 
         uMenuGame.setText("Game");
 
@@ -403,7 +450,7 @@ public class GameGUI extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(GameGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -414,6 +461,7 @@ public class GameGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton uBtnCard1;
     private javax.swing.JButton uBtnCard2;
     private javax.swing.JButton uBtnCard3;
@@ -424,9 +472,9 @@ public class GameGUI extends javax.swing.JFrame {
     private javax.swing.JButton uBtnDeck;
     private javax.swing.JButton uBtnNextCards;
     private javax.swing.JButton uBtnPrevCards;
+    private javax.swing.JLabel uLblAI1;
     private javax.swing.JLabel uLblAI2;
     private javax.swing.JLabel uLblAI3;
-    private javax.swing.JLabel uLblAI4;
     private javax.swing.JLabel uLblCardLeft1;
     private javax.swing.JLabel uLblCardLeft10;
     private javax.swing.JLabel uLblCardLeft2;
