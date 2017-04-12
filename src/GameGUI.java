@@ -26,82 +26,356 @@ public class GameGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        uBtnBack = new javax.swing.JButton();
-        uBtnCard0 = new javax.swing.JButton();
+        uPnlRight = new javax.swing.JPanel();
+        uLblCardRight1 = new javax.swing.JLabel();
+        uLblCardRight2 = new javax.swing.JLabel();
+        uLblCardRight3 = new javax.swing.JLabel();
+        uLblCardRight4 = new javax.swing.JLabel();
+        uLblCardRight5 = new javax.swing.JLabel();
+        uLblCardRight6 = new javax.swing.JLabel();
+        uLblCardRight7 = new javax.swing.JLabel();
+        uLblCardRight8 = new javax.swing.JLabel();
+        uLblCardRight9 = new javax.swing.JLabel();
+        uLblCardRight10 = new javax.swing.JLabel();
+        uLblAI3 = new javax.swing.JLabel();
+        uPnlTop = new javax.swing.JPanel();
+        uLblCardTop1 = new javax.swing.JLabel();
+        uLblCardTop2 = new javax.swing.JLabel();
+        uLblCardTop3 = new javax.swing.JLabel();
+        uLblCardTop4 = new javax.swing.JLabel();
+        uLblCardTop5 = new javax.swing.JLabel();
+        uLblCardTop6 = new javax.swing.JLabel();
+        uLblCardTop7 = new javax.swing.JLabel();
+        uLblCardTop8 = new javax.swing.JLabel();
+        uLblCardTop9 = new javax.swing.JLabel();
+        uLblCardTop10 = new javax.swing.JLabel();
+        uLblAI2 = new javax.swing.JLabel();
+        uPnlLeft = new javax.swing.JPanel();
+        uLblCardLeft1 = new javax.swing.JLabel();
+        uLblCardLeft2 = new javax.swing.JLabel();
+        uLblCardLeft3 = new javax.swing.JLabel();
+        uLblCardLeft4 = new javax.swing.JLabel();
+        uLblCardLeft5 = new javax.swing.JLabel();
+        uLblCardLeft6 = new javax.swing.JLabel();
+        uLblCardLeft7 = new javax.swing.JLabel();
+        uLblCardLeft8 = new javax.swing.JLabel();
+        uLblCardLeft9 = new javax.swing.JLabel();
+        uLblCardLeft10 = new javax.swing.JLabel();
+        uLblAI4 = new javax.swing.JLabel();
+        uPnlBottom = new javax.swing.JPanel();
         uBtnCard1 = new javax.swing.JButton();
         uBtnCard2 = new javax.swing.JButton();
         uBtnCard3 = new javax.swing.JButton();
         uBtnCard4 = new javax.swing.JButton();
         uBtnCard5 = new javax.swing.JButton();
         uBtnCard6 = new javax.swing.JButton();
+        uBtnCard7 = new javax.swing.JButton();
+        uLblPlayerName = new javax.swing.JLabel();
+        uBtnNextCards = new javax.swing.JButton();
+        uBtnPrevCards = new javax.swing.JButton();
+        uPnlMiddle = new javax.swing.JPanel();
+        uBtnDeck = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        uMenuBar = new javax.swing.JMenuBar();
+        uMenuGame = new javax.swing.JMenu();
+        uMenuItemInstructions = new javax.swing.JMenuItem();
+        uMenuItemSettings = new javax.swing.JMenuItem();
+        uMenuItemRestart = new javax.swing.JMenuItem();
+        uMenuItemExit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(590, 625));
+        setPreferredSize(new java.awt.Dimension(590, 625));
+        setSize(new java.awt.Dimension(590, 625));
+        getContentPane().setLayout(null);
 
-        uBtnBack.setText("Back");
+        uPnlRight.setBackground(new java.awt.Color(255, 100, 100));
+        uPnlRight.setMaximumSize(new java.awt.Dimension(120, 350));
+        uPnlRight.setPreferredSize(new java.awt.Dimension(120, 350));
+        uPnlRight.setLayout(null);
 
-        uBtnCard0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blue_4.png"))); // NOI18N
+        uLblCardRight1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight1);
+        uLblCardRight1.setBounds(0, 280, 91, 70);
 
-        uBtnCard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/red_7.png"))); // NOI18N
+        uLblCardRight2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight2);
+        uLblCardRight2.setBounds(0, 250, 90, 70);
 
-        uBtnCard2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back.png"))); // NOI18N
+        uLblCardRight3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight3);
+        uLblCardRight3.setBounds(0, 220, 90, 70);
 
-        uBtnCard3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/red_skip.png"))); // NOI18N
+        uLblCardRight4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight4);
+        uLblCardRight4.setBounds(0, 190, 90, 80);
 
-        uBtnCard4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blue_8.png"))); // NOI18N
+        uLblCardRight5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight5);
+        uLblCardRight5.setBounds(0, 160, 91, 80);
 
-        uBtnCard5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/yellow_9.png"))); // NOI18N
+        uLblCardRight6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight6);
+        uLblCardRight6.setBounds(0, 130, 90, 80);
 
-        uBtnCard6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/green_8.png"))); // NOI18N
+        uLblCardRight7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight7);
+        uLblCardRight7.setBounds(0, 100, 90, 80);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(uBtnBack))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(uBtnCard0, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(uBtnCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(uBtnCard3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(uBtnCard4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(uBtnCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(65, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(uBtnCard6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(uBtnCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(173, 173, 173))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(uBtnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(uBtnCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(uBtnCard6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(108, 108, 108)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(uBtnCard0, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(uBtnCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(uBtnCard3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(uBtnCard4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(uBtnCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        uLblCardRight8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight8);
+        uLblCardRight8.setBounds(0, 70, 90, 80);
+
+        uLblCardRight9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight9);
+        uLblCardRight9.setBounds(0, 40, 90, 80);
+
+        uLblCardRight10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblCardRight10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_right.png"))); // NOI18N
+        uPnlRight.add(uLblCardRight10);
+        uLblCardRight10.setBounds(0, 10, 90, 80);
+
+        uLblAI3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblAI3.setText("AIPlayer3");
+        uPnlRight.add(uLblAI3);
+        uLblAI3.setBounds(0, 0, 110, 16);
+
+        getContentPane().add(uPnlRight);
+        uPnlRight.setBounds(470, 110, 120, 350);
+
+        uPnlTop.setBackground(new java.awt.Color(100, 255, 100));
+        uPnlTop.setMaximumSize(new java.awt.Dimension(350, 120));
+        uPnlTop.setMinimumSize(new java.awt.Dimension(350, 120));
+        uPnlTop.setPreferredSize(new java.awt.Dimension(350, 120));
+        uPnlTop.setLayout(null);
+
+        uLblCardTop1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop1);
+        uLblCardTop1.setBounds(280, 15, 65, 90);
+
+        uLblCardTop2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop2);
+        uLblCardTop2.setBounds(250, 15, 65, 90);
+
+        uLblCardTop3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop3);
+        uLblCardTop3.setBounds(220, 15, 65, 90);
+
+        uLblCardTop4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop4);
+        uLblCardTop4.setBounds(190, 15, 65, 90);
+
+        uLblCardTop5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop5);
+        uLblCardTop5.setBounds(160, 15, 65, 90);
+
+        uLblCardTop6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop6);
+        uLblCardTop6.setBounds(130, 15, 65, 90);
+
+        uLblCardTop7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop7);
+        uLblCardTop7.setBounds(100, 15, 65, 90);
+
+        uLblCardTop8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop8);
+        uLblCardTop8.setBounds(70, 15, 65, 90);
+
+        uLblCardTop9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop9);
+        uLblCardTop9.setBounds(40, 15, 65, 90);
+
+        uLblCardTop10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_top.png"))); // NOI18N
+        uPnlTop.add(uLblCardTop10);
+        uLblCardTop10.setBounds(10, 15, 65, 90);
+
+        uLblAI2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblAI2.setText("AIPlayer2");
+        uPnlTop.add(uLblAI2);
+        uLblAI2.setBounds(0, 0, 350, 16);
+
+        getContentPane().add(uPnlTop);
+        uPnlTop.setBounds(120, 0, 350, 110);
+
+        uPnlLeft.setBackground(new java.awt.Color(100, 100, 255));
+        uPnlLeft.setMaximumSize(new java.awt.Dimension(120, 350));
+        uPnlLeft.setMinimumSize(new java.awt.Dimension(120, 350));
+        uPnlLeft.setLayout(null);
+
+        uLblCardLeft1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft1);
+        uLblCardLeft1.setBounds(30, 15, 91, 65);
+
+        uLblCardLeft2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft2);
+        uLblCardLeft2.setBounds(30, 45, 91, 65);
+
+        uLblCardLeft3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft3);
+        uLblCardLeft3.setBounds(30, 75, 91, 65);
+
+        uLblCardLeft4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft4);
+        uLblCardLeft4.setBounds(30, 105, 91, 65);
+
+        uLblCardLeft5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft5);
+        uLblCardLeft5.setBounds(30, 135, 91, 65);
+
+        uLblCardLeft6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft6);
+        uLblCardLeft6.setBounds(30, 165, 91, 65);
+
+        uLblCardLeft7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft7);
+        uLblCardLeft7.setBounds(30, 195, 91, 65);
+
+        uLblCardLeft8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft8);
+        uLblCardLeft8.setBounds(30, 225, 91, 65);
+
+        uLblCardLeft9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft9);
+        uLblCardLeft9.setBounds(30, 255, 91, 65);
+
+        uLblCardLeft10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_left.png"))); // NOI18N
+        uPnlLeft.add(uLblCardLeft10);
+        uLblCardLeft10.setBounds(30, 285, 91, 65);
+
+        uLblAI4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblAI4.setText("AIPlayer1");
+        uPnlLeft.add(uLblAI4);
+        uLblAI4.setBounds(0, 0, 110, 16);
+
+        getContentPane().add(uPnlLeft);
+        uPnlLeft.setBounds(0, 110, 120, 350);
+
+        uPnlBottom.setBackground(new java.awt.Color(255, 255, 100));
+        uPnlBottom.setMaximumSize(new java.awt.Dimension(550, 120));
+        uPnlBottom.setMinimumSize(new java.awt.Dimension(550, 120));
+        uPnlBottom.setPreferredSize(new java.awt.Dimension(550, 120));
+        uPnlBottom.setLayout(null);
+
+        uBtnCard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard1);
+        uBtnCard1.setBounds(60, 20, 70, 100);
+
+        uBtnCard2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard2);
+        uBtnCard2.setBounds(125, 20, 70, 100);
+
+        uBtnCard3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard3);
+        uBtnCard3.setBounds(190, 20, 70, 100);
+
+        uBtnCard4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard4);
+        uBtnCard4.setBounds(255, 20, 70, 100);
+
+        uBtnCard5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard5);
+        uBtnCard5.setBounds(320, 20, 70, 100);
+
+        uBtnCard6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard6);
+        uBtnCard6.setBounds(385, 20, 70, 100);
+
+        uBtnCard7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlBottom.add(uBtnCard7);
+        uBtnCard7.setBounds(450, 20, 70, 100);
+
+        uLblPlayerName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        uLblPlayerName.setText("Player");
+        uPnlBottom.add(uLblPlayerName);
+        uLblPlayerName.setBounds(70, 0, 440, 16);
+
+        uBtnNextCards.setBackground(new java.awt.Color(255, 255, 255));
+        uBtnNextCards.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/triangle_right.png"))); // NOI18N
+        uPnlBottom.add(uBtnNextCards);
+        uBtnNextCards.setBounds(530, 40, 50, 50);
+
+        uBtnPrevCards.setBackground(new java.awt.Color(255, 255, 255));
+        uBtnPrevCards.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/triangle_left.png"))); // NOI18N
+        uPnlBottom.add(uBtnPrevCards);
+        uBtnPrevCards.setBounds(5, 40, 50, 50);
+
+        getContentPane().add(uPnlBottom);
+        uPnlBottom.setBounds(0, 460, 590, 120);
+
+        uPnlMiddle.setBackground(new java.awt.Color(100, 255, 255));
+        uPnlMiddle.setLayout(null);
+
+        uBtnDeck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back.png"))); // NOI18N
+        uPnlMiddle.add(uBtnDeck);
+        uBtnDeck.setBounds(190, 120, 70, 100);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/card_back_alt.png"))); // NOI18N
+        uPnlMiddle.add(jLabel1);
+        jLabel1.setBounds(100, 125, 65, 90);
+
+        getContentPane().add(uPnlMiddle);
+        uPnlMiddle.setBounds(120, 110, 350, 350);
+
+        uMenuGame.setText("Game");
+
+        uMenuItemInstructions.setText("Instructions");
+        uMenuItemInstructions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uMenuItemInstructionsActionPerformed(evt);
+            }
+        });
+        uMenuGame.add(uMenuItemInstructions);
+
+        uMenuItemSettings.setText("Settings");
+        uMenuItemSettings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uMenuItemSettingsActionPerformed(evt);
+            }
+        });
+        uMenuGame.add(uMenuItemSettings);
+
+        uMenuItemRestart.setText("Restart");
+        uMenuItemRestart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uMenuItemRestartActionPerformed(evt);
+            }
+        });
+        uMenuGame.add(uMenuItemRestart);
+
+        uMenuItemExit.setText("Exit");
+        uMenuItemExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uMenuItemExitActionPerformed(evt);
+            }
+        });
+        uMenuGame.add(uMenuItemExit);
+
+        uMenuBar.add(uMenuGame);
+
+        setJMenuBar(uMenuBar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void uMenuItemRestartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemRestartActionPerformed
+        new GameGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_uMenuItemRestartActionPerformed
+
+    private void uMenuItemInstructionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemInstructionsActionPerformed
+        new InstructionsGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_uMenuItemInstructionsActionPerformed
+
+    private void uMenuItemSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemSettingsActionPerformed
+        new SettingsGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_uMenuItemSettingsActionPerformed
+
+    private void uMenuItemExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemExitActionPerformed
+        new StartGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_uMenuItemExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,13 +413,61 @@ public class GameGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton uBtnBack;
-    private javax.swing.JButton uBtnCard0;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton uBtnCard1;
     private javax.swing.JButton uBtnCard2;
     private javax.swing.JButton uBtnCard3;
     private javax.swing.JButton uBtnCard4;
     private javax.swing.JButton uBtnCard5;
     private javax.swing.JButton uBtnCard6;
+    private javax.swing.JButton uBtnCard7;
+    private javax.swing.JButton uBtnDeck;
+    private javax.swing.JButton uBtnNextCards;
+    private javax.swing.JButton uBtnPrevCards;
+    private javax.swing.JLabel uLblAI2;
+    private javax.swing.JLabel uLblAI3;
+    private javax.swing.JLabel uLblAI4;
+    private javax.swing.JLabel uLblCardLeft1;
+    private javax.swing.JLabel uLblCardLeft10;
+    private javax.swing.JLabel uLblCardLeft2;
+    private javax.swing.JLabel uLblCardLeft3;
+    private javax.swing.JLabel uLblCardLeft4;
+    private javax.swing.JLabel uLblCardLeft5;
+    private javax.swing.JLabel uLblCardLeft6;
+    private javax.swing.JLabel uLblCardLeft7;
+    private javax.swing.JLabel uLblCardLeft8;
+    private javax.swing.JLabel uLblCardLeft9;
+    private javax.swing.JLabel uLblCardRight1;
+    private javax.swing.JLabel uLblCardRight10;
+    private javax.swing.JLabel uLblCardRight2;
+    private javax.swing.JLabel uLblCardRight3;
+    private javax.swing.JLabel uLblCardRight4;
+    private javax.swing.JLabel uLblCardRight5;
+    private javax.swing.JLabel uLblCardRight6;
+    private javax.swing.JLabel uLblCardRight7;
+    private javax.swing.JLabel uLblCardRight8;
+    private javax.swing.JLabel uLblCardRight9;
+    private javax.swing.JLabel uLblCardTop1;
+    private javax.swing.JLabel uLblCardTop10;
+    private javax.swing.JLabel uLblCardTop2;
+    private javax.swing.JLabel uLblCardTop3;
+    private javax.swing.JLabel uLblCardTop4;
+    private javax.swing.JLabel uLblCardTop5;
+    private javax.swing.JLabel uLblCardTop6;
+    private javax.swing.JLabel uLblCardTop7;
+    private javax.swing.JLabel uLblCardTop8;
+    private javax.swing.JLabel uLblCardTop9;
+    private javax.swing.JLabel uLblPlayerName;
+    private javax.swing.JMenuBar uMenuBar;
+    private javax.swing.JMenu uMenuGame;
+    private javax.swing.JMenuItem uMenuItemExit;
+    private javax.swing.JMenuItem uMenuItemInstructions;
+    private javax.swing.JMenuItem uMenuItemRestart;
+    private javax.swing.JMenuItem uMenuItemSettings;
+    private javax.swing.JPanel uPnlBottom;
+    private javax.swing.JPanel uPnlLeft;
+    private javax.swing.JPanel uPnlMiddle;
+    private javax.swing.JPanel uPnlRight;
+    private javax.swing.JPanel uPnlTop;
     // End of variables declaration//GEN-END:variables
 }
