@@ -31,7 +31,7 @@ public class StartGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        startGame = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         userName = new javax.swing.JTextField();
@@ -46,13 +46,13 @@ public class StartGUI extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Start Game");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        startGame.setText("Start Game");
+        startGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                startGameActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, -1, -1));
+        jPanel1.add(startGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -128,10 +128,10 @@ public class StartGUI extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_exitActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void startGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGameActionPerformed
       
         try{
-        String File = "/Users/alex-macbookpro/Desktop/UNO1/src/sound.wav";
+        String File = "src/sounds/sound.wav";
         InputStream in = new FileInputStream(File);
 
         AudioStream audios=new AudioStream(in);
@@ -140,7 +140,7 @@ public class StartGUI extends javax.swing.JFrame {
         catch(Exception e){
         JOptionPane.showMessageDialog(null,e.getLocalizedMessage());
         }                       
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_startGameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,7 +180,6 @@ public class StartGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem exit;
     private javax.swing.JMenuItem instructions;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -188,6 +187,7 @@ public class StartGUI extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuItem settings;
+    private javax.swing.JButton startGame;
     private javax.swing.JTextField userName;
     // End of variables declaration//GEN-END:variables
 }
