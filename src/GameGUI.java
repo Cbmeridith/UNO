@@ -43,7 +43,7 @@ public class GameGUI extends javax.swing.JFrame {
         uLblAI1.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
         uLblAI2.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
         uLblAI3.setText(names[ThreadLocalRandom.current().nextInt(0, names.length)]);
-        
+        uLblPlayerName.setText(PlayerName);
         //Display Players based on PlayerCount
         switch(PlayerCount) {
             case 2: uPnlLeft.setVisible(false);
@@ -411,7 +411,6 @@ public class GameGUI extends javax.swing.JFrame {
 
     private void uMenuItemInstructionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemInstructionsActionPerformed
         new InstructionsGUI().setVisible(true);
-        dispose();
     }//GEN-LAST:event_uMenuItemInstructionsActionPerformed
 
     private void uMenuItemSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uMenuItemSettingsActionPerformed

@@ -1,3 +1,6 @@
+
+import javax.swing.JButton;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,6 +12,9 @@
  * @author CodyM
  */
 public class EndGameGUI extends javax.swing.JFrame {
+
+    // Variables declaration - do not modify
+    JButton jButton1;
 
     /**
      * Creates new form EndGameGUI
@@ -26,50 +32,100 @@ public class EndGameGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        uLblResult = new javax.swing.JLabel();
-        uBtnBack = new javax.swing.JButton();
-
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        start = new javax.swing.JMenu();
+        startGame = new javax.swing.JMenuItem();
+        instructions = new javax.swing.JMenuItem();
+        settings = new javax.swing.JMenuItem();
+        exit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uLblResult.setText("<End Result>");
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        uBtnBack.setText("Back");
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Game Over");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 390, 80));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 630));
+
+        start.setText("Game");
+
+        startGame.setText("New Game");
+        startGame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                startGameActionPerformed(evt);
+            }
+        });
+        start.add(startGame);
+
+        instructions.setText("Instructions");
+        instructions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                instructionsActionPerformed(evt);
+            }
+        });
+        start.add(instructions);
+
+        settings.setText("Settings");
+        settings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                settingsActionPerformed(evt);
+            }
+        });
+        start.add(settings);
+
+        exit.setText("Exit");
+        exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitActionPerformed(evt);
+            }
+        });
+        start.add(exit);
+
+        jMenuBar1.add(start);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
-                        .addComponent(uLblResult))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(uBtnBack)))
-                .addContainerGap(164, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(uBtnBack)
-                .addGap(103, 103, 103)
-                .addComponent(uLblResult)
-                .addContainerGap(146, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void startGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGameActionPerformed
+        StartGUI newGame = new StartGUI();
+        newGame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_startGameActionPerformed
+
+    private void instructionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instructionsActionPerformed
+        InstructionsGUI instructions = new InstructionsGUI();
+        instructions.setVisible(true);
+    }//GEN-LAST:event_instructionsActionPerformed
+
+    private void settingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsActionPerformed
+        SettingsGUI settings = new SettingsGUI();
+        settings.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_settingsActionPerformed
+
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+        dispose();
+    }//GEN-LAST:event_exitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,10 +163,14 @@ public class EndGameGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuItem exit;
+    private javax.swing.JMenuItem instructions;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JButton uBtnBack;
-    private javax.swing.JLabel uLblResult;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem settings;
+    private javax.swing.JMenu start;
+    private javax.swing.JMenuItem startGame;
     // End of variables declaration//GEN-END:variables
 }
